@@ -21,7 +21,7 @@ class TasksService{
     appState.tasks = appState.tasks.filter(t=> t.id !=id)
   }
 
-  async toggleTask(id){
+  async toggleTaskComplete(id){
     const task = appState.tasks.find(t=>t.id==id)
     if(!task){
       throw new Error('bad id')

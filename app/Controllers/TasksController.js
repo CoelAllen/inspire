@@ -9,10 +9,16 @@ import { setHTML, setText } from "../Utils/Writer.js";
 function drawTasks(){
   let template = ''
   appState.tasks.forEach(t=> template += t.TaskTemplate)
+  let completedTasks = appState.tasks.filter(t=>t.completed==true).length
+  
   setHTML('tasks', template)
+  setText('completed-tasks', completedTasks)
   setText('total-tasks', appState.tasks.length)
-  setText('completed-tasks')
-}
+  }
+
+
+  
+
 export class TasksController{
   constructor(){
     console.log("hello from taskscontroller");
@@ -65,12 +71,12 @@ export class TasksController{
    }
    async toggleTaskComplete(id){
      try {
-       await tasksService.toggleTask(id)
+       await tasksService.toggleTaskComplete(id)
     } catch (error) {
       console.error('[toggleTask]',error);
       Pop.error(error)
       
     }
   }
-
+ 
 }
