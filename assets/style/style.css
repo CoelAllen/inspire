@@ -1,1 +1,48 @@
-/* BASIC STYLES HERE */
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: beige;
+}
+
+.hide {
+  display: none,
+}
+
+.quote {
+  display: block;
+  text-shadow: 1px 1px rgb(15, 14, 14), 0px 0px 5px rgba(248, 248, 37, 0.628);
+  font-weight: bold;
+  letter-spacing: .08rem;
+  color: aliceblue;
+  font-size: large;
+}
+
+.quote:hover+.author {
+  display: block
+}
+
+.author {
+  display: none;
+  text-shadow: 1px 1px rgb(15, 14, 14);
+  font-weight: bolder;
+  letter-spacing: .1rem;
+  color: rgb(233, 20, 20)
+}
+
+.clock {
+  background-color: rgba(245, 245, 220, 0.527);
+  width: 20vh;
+  max-height: 10vh;
+  text-align: center;
+  font-size: large;
+
+}
+
+.tempF {
+  display: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
