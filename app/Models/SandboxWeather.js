@@ -11,11 +11,21 @@ export class SandboxWeather{
     return /*html*/ `
     <div class="card opacity-75 text-center">
             <div class="card-body">
-              <h1>${this.tempC}C</h1>
               <h1>${this.tempF}F</h1>
+            </div>
+          </div>
+              
+    `
+              
+  }
+  get WeatherCelsiusTemplate(){
+     return /*html*/ `
+    <div class="card opacity-75 text-center">
+            <div class="card-body">
+              <h1>${this.tempC}C</h1>
+              
               </div>
               </div>
     `
-              
   }
 }

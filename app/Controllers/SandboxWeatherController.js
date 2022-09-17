@@ -7,16 +7,18 @@ import { setHTML } from "../Utils/Writer.js";
 
 
 function drawWeather(){
-
   // @ts-ignore
-setHTML('weather', appState.sandboxWeather.WeatherTemplate)
+setHTML('weatherF', appState.sandboxWeather.WeatherTemplate)
+// @ts-ignore
+setHTML('weatherC', appState.sandboxWeather.WeatherCelsiusTemplate)
 }
+
 export class SandboxWeatherController{
   constructor(){
     this.getSandboxWeather()
     appState.on('sandboxWeather', drawWeather)
   }
-
+ 
   async getSandboxWeather(){
     try {
       await sandboxWeatherService.getSandboxWeather()
