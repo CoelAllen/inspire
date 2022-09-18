@@ -19,29 +19,29 @@
   
   <main class="container-fluid">
     <div class="row justify-content-between align-items-center">
-      <div class="selectable no-select col-4 col-md-2 col-lg-1 m-3 celsius" id="weather">
+      <div class="selectable no-select col-4 col-md-2 col-lg-1 m-3" onclick="app.sandboxWeatherController.toggleTemp()" id="weather">
       </div>
       
-      <div class="clock pt-2 m-3">
+      <div class="clock temp rounded text-light pt-2 m-3">
         
-        <div class="card-body pb-2" id="clock"></div>
+        <div class="pb-2" id="clock"></div>
       </div>
     </div>
-    <div class="row align-items-end text-center justify-content-center mt-5 ms-5 h-100">
-      <div class="col-md-8 quote selectable fs-1" id="quote">
+    <div class="row d-flex justify-content-center align-items-center" >
+      <div class="col-md-8 quote selectable text-center fs-1" id="quote">
       </div>
-      <p class ="author" id="author"></p> 
+      <p class ="author text-center" id="author"></p> 
     </div>
     
   </main>
   <footer class="container-fluid">
     
     <div class="row justify-content-end align-items-end" id="to-do">
-      <div class="card col-12 col-lg-2 col-md-4 m-3">
-        <div class="card-body">
-          <h5 class="text-center">TO-DO</h5>
-          <ul >
-            <div class="text-center"><span id ="completed-tasks"></span>/<span id ="total-tasks"></span></div>
+      <div class="temp rounded text-center text-light col-12 col-lg-2 col-md-4 m-3">
+        <div>
+          <h5 class="text-center mt-3">To Do List</h5><span id ="completed-tasks"></span>/<span id ="total-tasks"></span>
+          <ul class="ps-0" >
+            <div class="text-center"></div>
             <div id="tasks"></div>
           </ul>
           <form onsubmit="app.tasksController.addTask()">

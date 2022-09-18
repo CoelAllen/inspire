@@ -30,4 +30,14 @@ export class SandboxWeatherController{
       
     }
 }
+  
+async toggleTemp(){
+    try {
+      await sandboxWeatherService.toggleTemp()
+    } catch (error) {
+      console.error('[toggle]', error);
+      
+    }
+  }
 }
+    // this.tempF = Math.ceil((this.tempC*1.8) +  32)

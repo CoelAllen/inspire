@@ -14,7 +14,7 @@ export class Task{
     
     <div class=" d-flex justify-content-between">
       <input type="checkbox" ${this.completed ? 'checked' : ''} onchange="app.tasksController.toggleTaskComplete('${this.id}')">
-      <li>${this.description}</li><i onclick = "app.tasksController.deleteTask('${this.id}')" class="mdi mdi-delete"></i>
+      <li>${this.description}</li><i onclick = "app.tasksController.deleteTask('${this.id}')" class="mdi mdi-delete text-danger"></i>
     </div>
     `
   }

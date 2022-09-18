@@ -11,11 +11,12 @@ body {
 
 .quote {
   display: block;
-  text-shadow: 1px 1px rgb(15, 14, 14), 0px 0px 5px rgba(248, 248, 37, 0.628);
+  text-shadow: 1px 1px rgba(23, 22, 22, 0.967), 0px 0px 3px rgba(125, 248, 108, 0.561);
   font-weight: bold;
   letter-spacing: .08rem;
-  color: aliceblue;
+  color: rgba(221, 221, 192, 0.931);
   font-size: large;
+  margin-top: 15vh;
 }
 
 .quote:hover+.author {
@@ -39,7 +40,10 @@ body {
 
 }
 
-
+.temp {
+  background-color: rgba(8, 8, 8, 0.599);
+  text-shadow: 1px 1px rgb(19, 18, 18);
+}
 
 ul {
   list-style-type: none;

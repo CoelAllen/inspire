@@ -6,8 +6,8 @@ export class SandboxQuote{
   }
   get QuoteTemplate(){
     return /*html*/ `
-          <p>${this.content}
-        </p>
+          <p>${this.content}</p>
+          
          
     `
   }
