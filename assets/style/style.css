@@ -17,6 +17,7 @@ body {
   color: rgba(221, 221, 192, 0.931);
   font-size: large;
   margin-top: 15vh;
+  background-color: rgba(8, 8, 8, 0.324);
 }
 
 .quote:hover+.author {
